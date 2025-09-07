@@ -1477,6 +1477,107 @@ blockquote {
         padding: var(--spacing-md);
     }
 }
+/* Anomaly Theme Styles (Música 01) */
+.anomaly-theme {
+    background: linear-gradient(135deg, #000000 0%, #001a1a 50%, #000000 100%);
+}
+
+.anomaly-hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.anomaly-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 30% 30%, rgba(0, 229, 255, 0.1) 0%, transparent 60%),
+        radial-gradient(circle at 70% 70%, rgba(0, 255, 127, 0.05) 0%, transparent 60%);
+    z-index: 1;
+}
+
+.anomaly-badge {
+    background: linear-gradient(45deg, #00e5ff, #00ff7f);
+    color: #000000;
+    box-shadow: 0 0 15px rgba(0, 229, 255, 0.4);
+}
+
+.anomaly-quote {
+    border-left-color: #00ff7f;
+    background: rgba(0, 255, 127, 0.05);
+    color: #ccffcc;
+}
+
+.anomaly-quote-main {
+    background: linear-gradient(135deg, rgba(0, 255, 127, 0.1), rgba(0, 229, 255, 0.05));
+    border: 2px solid #00ff7f;
+    padding: var(--spacing-lg);
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    margin: var(--spacing-xl) 0;
+    border-radius: var(--border-radius-lg);
+}
+
+.anomaly-btn {
+    background: linear-gradient(45deg, #00e5ff, #00ff7f);
+    color: #000000;
+    border: none;
+    box-shadow: 0 4px 15px rgba(0, 229, 255, 0.3);
+}
+
+.anomaly-btn:hover {
+    background: linear-gradient(45deg, #00ff7f, #33ff99);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 255, 127, 0.4);
+}
+
+.anomaly-thesis {
+    background: linear-gradient(135deg, rgba(0, 255, 127, 0.05), rgba(0, 0, 0, 0.3));
+    border-left: 4px solid #00ff7f;
+}
+
+.anomaly-block {
+    border-left: 4px solid #00ff7f;
+    background: linear-gradient(135deg, rgba(0, 255, 127, 0.03), rgba(0, 0, 0, 0.1));
+}
+
+.neuroscience-breakdown,
+.compatibilist-elements {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+}
+
+.neuro-element,
+.compat-element {
+    background: rgba(0, 255, 127, 0.05);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius);
+    border: 1px solid rgba(0, 255, 127, 0.2);
+    transition: var(--transition);
+}
+
+.neuro-element:hover,
+.compat-element:hover {
+    background: rgba(0, 255, 127, 0.08);
+    border-color: rgba(0, 255, 127, 0.4);
+    transform: translateY(-2px);
+}
+
+.neuro-element h4,
+.compat-element h4 {
+    color: #33ff99;
+    margin-bottom: var(--spacing-sm);
+    font-weight: 700;
+}
+
 
 
 
