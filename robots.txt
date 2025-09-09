@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Provide a pointer to the sitemap for improved discovery
+Sitemap: https://projectexpat.github.io/EndInSite/sitemap.xml
