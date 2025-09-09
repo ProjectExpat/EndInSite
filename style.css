@@ -1578,20 +1578,35 @@ blockquote {
     font-weight: 700;
 }
 
-
-
-
-/* SoundCloud Embed (responsive) */
-.sc-embed { margin-top: var(--spacing-lg); }
-.sc-embed-title { font-weight: 700; margin-bottom: var(--spacing-sm); }
-.sc-embed-note { color: var(--color-silver); font-size: 0.95rem; margin-top: var(--spacing-xs); }
-.sc-embed-frame {
-  width: 100%;
-  height: 360px;
-  border: 0;
-  border-radius: var(--border-radius);
-  box-shadow: var(--shadow-lg);
+/*
+ * SoundCloud Embed (responsive)
+ * These styles define a reusable component for embedding the EndInSite playlist
+ * from SoundCloud. The component includes a title, iframe and a small note.
+ */
+.sc-embed {
+    margin-top: var(--spacing-lg);
 }
-@media (max-width: 640px) { .sc-embed-frame { height: 300px; } }
+.sc-embed-title {
+    font-weight: 700;
+    margin-bottom: var(--spacing-sm);
+}
+.sc-embed-note {
+    color: var(--color-silver);
+    font-size: 0.95rem;
+    margin-top: var(--spacing-xs);
+}
+.sc-embed-frame {
+    width: 100%;
+    height: 360px;
+    border: 0;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-lg);
+}
+@media (max-width: 640px) {
+    .sc-embed-frame {
+        height: 300px;
+    }
+}
+
 
 
